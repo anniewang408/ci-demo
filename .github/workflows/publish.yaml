@@ -9,3 +9,13 @@ jobs:
       - run: |
           npm install
           npm run lint
+  publish:
+    name: Publish
+    runs-on: JS-DevTools/npm-publish@v1
+    needs: lint
+    steps:
+      - uses: 
+      - run: |
+          git clone https://github.com/anniewang408/ci-demo.git
+
+
